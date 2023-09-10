@@ -3,7 +3,7 @@ Simply put:
 
 ### Distributed Containers
 Think K8s as a brain, it handles the change of a workload of infrastructure, it scales container across multiple machines, if one fails, it replaces new one.
-![Distributed containers](images/k8s-1.png){ width=80% }
+![Distributed containers](images/k8s-1.png)
 
 ### Control Plane && Kubelet && Nodes
 The brain of the operation is known as the Control Plane, it exposes APIs to manage cluster. Each cluster has multiple nodes, inside each node there is something called kubelet, which is a tiny app runs on machine to communicate with the Control Plane. There are also pods in each node. Each node then again has multiple conainers. As workload increases, K8s auto-add new node.
